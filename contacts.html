@@ -4,9 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Contact Me</title>
+  <style>
+  hr {
+    border-style:dotted none none;
+    height:0px;
+    width:3%;
+    border-color: #c70039;
+    border-width: 5px;
+  }
+  </style>
 </head>
 
-<body>
+<body style="background-color: #ffbd69;">
   <h1>Contact Details</h1>
   <p>Shridhar M Pai</p>
   <p>xxxxxxxxxx</p>
@@ -14,28 +23,29 @@
   </p>
   <hr>
   <form action="mailto:shridharpai.m@gmail.com" method="post" enctype="text/plain">
-    <table>
-      <tbody>
-        <tr>
-          <td><label>Name: </label></td>
-          <td><input type="text" name="Name" value=""></td>
-        </tr>
-        <tr>
-          <td><label>Email: </label></td>
-          <td><input type="email" name="Email" value=""></td>
-        </tr>
-        <tr>
-          <td><label>Your Message: </label></td>
-          <td><textarea name="Message" rows="10" cols="20"></textarea></td>
-        </tr>
+    <fieldset style="border-radius:5px; border-color:green; width:25px;">
+      <legend align="center">
+        Your Details
+      </legend>
+      <table>
+        <tbody>
+          <tr>
+            <td><label>Name: </label></td>
+            <td><input type="text" name="Name" value="" size="20"></td>
+          </tr>
+          <tr>
+            <td><label>Email: </label></td>
+            <td><input type="email" name="Email" value="" size="20"></td>
+          </tr>
+          <tr>
+            <td><label>Your Message: </label></td>
+            <td><textarea name="Message" rows="10" cols="20"></textarea></td>
+          </tr>
 
-      </tbody>
-    </table>
-
-
-
-
-    <input type="submit" name="">
+        </tbody>
+      </table>
+      <input type="submit" name="" style="border-radius:10px; background-color:#eab0d9;">
+    </fieldset>
   </form>
 </body>
 
